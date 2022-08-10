@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+	<title>Registration</title>
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="screen">
+
+			<div class="screen__content">
+				<form action="/login" method="post" class="login">
+					<div class="login__field">
+						<div class="logo" id="logo">
+
+
+							<img src="/static/img.jpg" alt="" id="rasm">
+
+
+						</div>
+						<br>
+
+						<i class="login__icon fas fa-user"></i>
+						<input type="text" name="ismi" class="login__input" placeholder="Ism / Familiya ">
+						
+						
+<label  class="login__input" id="d" for="">Tugulgan Kuningiz</label>
+<input type="date" id="start" name="yil"
+       value="2018-07-22"
+       min="1960-01-01" max="2018-12-31">
+	   
+					<br>
+					<br>
+						<input type="text" name="oqish_joyi" class="login__input" id="oqish" placeholder="O’qish joyingiz/ish joyingiz">
+					</div>
+					
+					<div class="login__field">
+						<i class="login__icon fas fa-lock"></i>
+						<select name="yonalish" ><option  selected  hidden value="tanlanmagan" >Yo'nalishni tanlang</option>
+            <option value="Dasturlash">Dasturlash</option>
+            <option value="Kampyuter sovodxonligi">Kampyuter sovodxonligi</option>
+            <option value="Roboto texnika">Roboto texnika</option>
+            <option value="Mobile app">Mobile app</option>
+            </select>
+			<i class="login__icon fas fa-lock"></i>
+            <select name='viloyat'  ><option  selected hidden  value="tanlanmagan" >Viloyatni tanlang </option>
+            <option value="Toshkentsh">Toshkent</option>
+            <option value="Andijon">Andijon</option>
+            <option value="Namangan">Namangan</option>
+            <option value="Farg'ona">Farg'ona</option>
+            <option value="Buxoro">Buxoro</option>
+            <option value="Jizzax">Jizzax</option>
+            <option value="Navoiy">Navoiy</option>
+            <option value="Qashqadaryo">Qashqadaryo</option>
+            <option value="Samarqand">Samarqand</option>
+            <option value="Sirdaryo">Sirdaryo</option>
+            <option value="Buxoro">Surxandaryo</option>
+            <option value="Xorazim">Xorazim</option>
+            <option value="Qoraqalpogʻiston Respublikasi">Qoraqalpogʻiston Respublikasi</option>
+			<br>
+			<textarea name="textarea" id="textarea" cols="10" rows="5" placeholder="Biz sizni nima uchun tanlaymiz"></textarea>
+
+
+					</div>
+					<div class="login__field">
+						<i class="login__icon fas fa-lock"></i>
+						<input type="text"class="login__number" id="phone" name="phone" placeholder="Mobile nomer">
+						<br>
+
+					</div>
+
+					<button type="submit" class="button login__submit">
+						<span class="button__text">Ro'yhatdan o'tish</span>
+						<i class="button__icon fas fa-chevron-right"></i>
+					</button>
+
+				</form>
+
+				<div class="social-login">
+					<h3>Registration</h3>
+					<div class="social-icons">
+						<a href="#" class="social-login__icon fab fa-instagram"></a>
+						<a href="#" class="social-login__icon fab fa-facebook"></a>
+						<a href="#" class="social-login__icon fab fa-twitter"></a>
+					</div>
+				</div>
+			</div>
+			<div class="screen__background">
+				<span class="screen__background__shape screen__background__shape4"></span>
+				<span class="screen__background__shape screen__background__shape3"></span>
+				<span class="screen__background__shape screen__background__shape2"></span>
+				<span class="screen__background__shape screen__background__shape1"></span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

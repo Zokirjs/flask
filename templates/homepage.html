@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+
+
+body {
+  background-image: url(/static/homepage.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+	background-color: #f2f2f2;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+}
+/* Container */
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	background-color: #F5F5F5;
+}
+
+/* Home Page */
+.titular .tagline {
+	font-size: 60px;
+	color: #FFF;
+	font-family: Times New Roman;
+	position: absolute;
+  margin-top: 200px;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+	animation: effect 2s linear infinite; 
+	text-shadow: 1px 1px 4px #000000;
+}
+
+@keyframes effect { 
+	0% { 
+		color: #FFF;
+		-webkit-background-clip: text;
+	} 
+	100% { 
+		color: rgb(0,255,132); 
+		-webkit-background-clip: text; 
+	} 
+} 
+
+.titular .subtitle {
+	font-size: 25px;
+	color: #FFFFFF;
+	font-family: Bahnschrift;
+	position: absolute;
+	margin-top: 210px;;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	text-shadow: 1px 1px 4px #000000;
+}
+
+.titular .btntop {
+	
+	
+    position: absolute;
+	padding: 0;
+	padding-left: 2em;
+border: none;
+background: none;
+    width: 200vw;
+	height: 200vh;
+	left: 100px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Bahnschrift;
+    color: rgb(74, 76, 177);
+    
+    border-radius: 5px;
+    top: 82%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    padding: 8px 25px;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+/* .titular .btntop:hover {
+	background-color: #FFF;
+	color: rgb(0,35,51);
+	cursor: pointer;
+} */
+
+.titular .btn {
+	font-size: 18px;
+	font-weight: 400;
+	font-family: Bahnschrift;
+	
+	border: none;
+	border-radius: 5px;
+	position: absolute;
+  margin-top: 450px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	padding: 12px 25px;
+  cursor: pointer;
+	background-color: rgb(0,35,51);
+}
+
+.titular .bg {
+
+	width: 100%; 
+	height: 100%;
+	opacity: 70%;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top: 1000px;   
+}
+
+.context h1{
+	text-align: center;
+	color: #FFF;
+	font-size: 50px;
+	font-family: Times New Roman;
+	vertical-align: center;
+}
+
+.context p {
+	text-align: center;
+  color: #FFF;
+  font-size: 20px;
+	font-family: Bahnschrift;
+}
+
+.context .line {
+	border-radius: 25px;
+ 	background: rgb(0,255,132);
+  padding: 6px;
+ 	width: 1000px;
+ 	height: 3px;
+}
+
+
+/* Animated Background */
+.area {
+	background: rgb(0,35,51); 
+	width: 100%;
+	height: 100vh;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circles{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.circles li{
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	background: white;
+	animation: rise 25s linear infinite;
+	bottom: -150px;
+	border-radius: 50%;
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes rise {
+	0%{
+		transform: translateY(0);
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(-1000px);
+		opacity: 0;
+	}
+}
+
+
+/* Image Gallery */
+.gallery h1 {
+	text-align: center;
+	color: rgb(0,35,51);
+	font-size: 50px;
+	font-family: Times New Roman;
+	vertical-align: center;
+  background-image: url('homepage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.grid {
+	display: flex;
+  justify-content: center;
+}
+
+.grid img {
+	width: 25%;
+	display: inline-block;
+	margin: 20px auto;
+}
+
+
+/* Footer */
+.footer_banner {
+	background-color: rgb(0,35,51);
+	padding-top: 60px;
+	padding-bottom: 30px;
+	margin-bottom: 0px;
+	background-repeat: repeat;
+	margin-top: 15px;
+}
+.footer_banner p {
+	text-align: center;
+    color: #FFF;
+    font-size: 20px;
+	font-family: Adobe Gothic Std;
+}
+.footer_banner .fline{
+	border-radius: 25px;
+ 	background: rgb(0,255,132);
+  	padding: 1px;
+  	width: 1300px;
+  	height: 1px;
+}
+.footer_banner a{
+	text-decoration: none;
+	color: #FFF;
+    font-size: 20px;
+	font-family: Adobe Gothic Std;
+}
+
+
+
+@media screen and (max-width: 2000px) {
+	.titular .tagline {
+		font-size: 45px;
+		top: 30%;
+	}
+}
+@media screen and (max-width: 1500px) {
+	.titular .tagline {
+		font-size: 43px;
+		top: 10%;
+	}
+	.titular .subtitle {
+		font-size: 23px;
+		top: 15%;
+	}
+	.context h1 {
+		margin-top: 0;
+	}
+	
+	.context .line {
+		width: 80%;
+	}
+}
+.button {
+  background: url(http://theimageconference.org/wp-content/uploads/2014/01/images-50x50.png) no-repeat;
+  cursor: pointer;
+  border: none;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (max-width: 1000px) {
+	.titular .tagline {
+		font-size: 30px;
+		top: 8%;
+	}
+	.titular .subtitle {
+		font-size: 18px;
+		top: 16%;
+	}
+	.titular .btn {
+  
+   
+  background: url(http://theimageconference.org/wp-content/uploads/2014/01/images-50x50.png) no-repeat;
+  cursor: pointer;
+ 
+  background-size: cover;
+ 
+
+
+
+	
+		}
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="titular">		
+		
+		<a href="/home"><button class="btntop" id="kerak"></button></a>
+      </div>
+	  </div>
+
+	
+      
+  </div>
+</body>
+</html>
